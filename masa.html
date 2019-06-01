@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pretvarač Jedinica za Masu</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Pretvarač</span> Jedinica</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="masa.html">MASA</a></li>
+                        <li><a href="duljina.html">DULJINA</a></li>
+                        <li><a href="temperatura.html">TEMPERATURA</a></li>
+                        <li><a href="brzina.html">BRZINA</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="title">
+            <div class="container">
+                <h2><span class="highlight">Pretvarac</span> za <span class="highlight">Masu</span></h2>
+            </div>
+        </section>
+
+        <section class="big-box container">
+                <div class="box">
+                    <p>Unesi masu u funtama</p>
+
+                    <p>
+                        <label>Funte</label>
+                        <input type="number" placeholder="lbs" oninput="poundsToKilograms(this.value)" onchange="poundsToKilograms(this.value)">
+                    </p>
+                    <p>Kilogrami: <span id="pounds-kilograms"></span></p>
+                </div>
+
+                <div class="box">
+                    <p>Unesi masu u funtama</p>
+
+                    <p>
+                        <label>Funte</label>
+                        <input type="number" placeholder="lbs" oninput="poundsToOunces(this.value)" onchange="poundsToOunces(this.value)">
+                    </p>
+                    <p>Unce: <span id="pounds-ounces"></span></p>
+                </div>
+
+                <div class="box">
+                    <p>Unesi masu u funtama</p>
+
+                    <p>
+                        <label>Funte</label>
+                        <input type="number" placeholder="lbs" oninput="poundsToGrams(this.value)" onchange="poundsToGrams(this.value)">
+                    </p>
+                    <p>Grama: <span id="pounds-grams"></span></p>
+                </div>
+
+                <div class="box">
+                    <p>Unesi masu u funtama</p>
+
+                    <p>
+                        <label>Funte</label>
+                        <input type="number" placeholder="lbs" oninput="poundsToStones(this.value)" onchange="poundsToStones(this.value)">
+                    </p>
+                    <p>Stones: <span id="pounds-stones"></span></p>
+                </div>
+        </section>
+
+        <section class="big-box container">
+            <div class="box">
+                <p>Unesi masu u kilogramima</p>
+
+                <p>
+                    <label>Kilogrami</label>
+                    <input type="number" placeholder="kg" oninput="kilogramsToPounds(this.value)" onchange="kilogramsToPounds(this.value)">
+                </p>
+                <p>Funte: <span id="kilograms-pounds"></span></p>
+            </div>
+
+            <div class="box">
+                    <p>Unesi masu u kilogramima</p>
+    
+                    <p>
+                        <label>Kilogrami</label>
+                        <input type="number" placeholder="kg" oninput="kilogramsToOunces(this.value)" onchange="kilogramsToOunces(this.value)">
+                    </p>
+                    <p>Unce: <span id="kilograms-ounces"></span></p>
+                </div>
+
+            <div class="box">
+                <p>Unesi masu u kilogramima</p>
+
+                <p>
+                    <label>Kilogrami</label>
+                    <input type="number" placeholder="kg" oninput="kilogramsToStones(this.value)" onchange="kilogramsToStones(this.value)">
+                </p>
+                <p>Stijene(Stones): <span id="kilograms-stones"></span></p>
+            </div>
+
+        </section>
+
+        <section class="big-box container">
+            <div class="box">
+                <p>Unesi masu u uncama</p>
+
+                <p>
+                    <label>Unce</label>
+                    <input type="number" placeholder="Oz" oninput="ouncesToPounds(this.value)" onchange="ouncesToPounds(this.value)">
+                </p>
+                <p>Funte(pounds): <span id="ounces-pounds"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Unesi masu u uncama</p>
+    
+                <p>
+                     <label>Unce</label>
+                     <input type="number" placeholder="Oz" oninput="ouncesToKilograms(this.value)" onchange="ouncesToKilograms(this.value)">
+                </p>
+                <p>kilogrami: <span id="ounces-kilograms"></span></p>
+            </div>
+
+            <div class="box">
+                 <p>Unesi masu u uncama</p>
+    
+                <p>
+                     <label>Unce</label>
+                     <input type="number" placeholder="Oz" oninput="ouncesToGrams(this.value)" onchange="ouncesToGrams(this.value)">
+                 </p>
+                  <p>grami: <span id="ounces-grams"></span></p>
+            </div>
+
+            <div class="box">
+                 <p>Unesi masu u uncama</p>
+    
+                 <p>
+                      <label>Unce</label>
+                     <input type="number" placeholder="Oz" oninput="ouncesToStones(this.value)" onchange="ouncesToStones(this.value)">
+                 </p>
+                 <p>Stijene(stones): <span id="ounces-stones"></span></p>
+            </div>
+        </section>
+
+        <section class="big-box container">
+            <div class="box">
+                <p>Unesi masu u Stijenama</p>
+    
+                <p>                            
+                    <label>Stijene</label>
+                    <input type="number" placeholder="St" oninput="stonesToKilograms(this.value)" onchange="stonesToKilograms(this.value)">
+                </p>
+                <p>Kilogrami: <span id="stones-kilograms"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Unesi masu u Stijenama</p>
+    
+                <p>
+                    <label>Stijene</label>
+                    <input type="number" placeholder="St" oninput="stonesToOunces(this.value)" onchange="stonesToOunces(this.value)">
+                </p>
+                <p>Unce: <span id="stones-ounces"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Unesi masu u Stijenama</p>
+    
+                <p>           
+                     <label>Stijene</label>
+                    <input type="number" placeholder="St" oninput="stonesToPounds(this.value)" onchange="ouncesToPounds(this.value)">
+                </p>
+                <p>Funte(pounds): <span id="stones-pounds"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Unesi masu u Stijenama</p>
+        
+                <p>           
+                    <label>Stijene</label>
+                    <input type="number" placeholder="St" oninput="stonesToGrams(this.value)" onchange="stonesToGrams(this.value)">
+                </p>
+                <p>grami: <span id="stones-grams"></span></p>
+            </div>
+
+        </section>
+
+
+        <footer></footer>
+    </body>
+    <script type="text/javascript" src="./script/script.js"></script>
+</html>

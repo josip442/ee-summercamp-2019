@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pretvarač Jedinica za Masu</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Pretvarač</span> Jedinica</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="masa.html">MASA</a></li>
+                        <li class="current"><a href="duljina.html">DULJINA</a></li>
+                        <li><a href="temperatura.html">TEMPERATURA</a></li>
+                        <li><a href="brzina.html">BRZINA</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="title">
+            <div class="container">
+                <h2><span class="highlight">Pretvarac</span> za <span class="highlight">Duljinu</span></h2>
+            </div>
+        </section>
+
+        <section class="big-box container">
+            <div class="box">
+                <p>Unesi duljinu u metrima</p>
+
+                <p>
+                    <label>metri</label>
+                    <input type="number" placeholder="m" oninput="metersToMiles(this.value)" onchange="metersToMiles(this.value)">
+                </p>
+
+                <p>Milje: <span id="meters-miles"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Unesi duljinu u metrima</p>
+    
+                <p>
+                    <label>metri</label>
+                    <input type="number" placeholder="m" oninput="metersToInches(this.value)" onchange="metersToInches(this.value)">
+                </p>
+    
+                <p>Inči: <span id="meters-inches"></span></p>
+            </div>
+
+            <div class="box">
+                <p>Unesi duljinu u metrima</p>
+    
+                <p>
+                    <label>metri</label>
+                    <input type="number" placeholder="m" oninput="metersToYards(this.value)" onchange="metersToYards(this.value)">
+                </p>
+    
+                <p>Jardi: <span id="meters-yards"></span></p>
+            </div>
+        </section>
+
+        <section class="big-box container">
+            <div class="box">
+                <p>Unesi duljinu u Miljama</p>
+    
+                <p>
+                    <label>Milje</label>
+                    <input type="number" placeholder="m" oninput="milesToMeters(this.value)" onchange="milesToMeters(this.value)">
+                </p>
+    
+                <p>metri: <span id="miles-meters"></span></p>
+            </div>
+    
+            <div class="box">
+                <p>Unesi duljinu u Miljama</p>
+        
+                <p>
+                    <label>Milje</label>
+                    <input type="number" placeholder="m" oninput="milesToInches(this.value)" onchange="milesToInches(this.value)">
+                </p>
+        
+                <p>Inči: <span id="miles-inches"></span></p>
+            </div>
+    
+            <div class="box">
+                <p>Unesi duljinu u Miljama</p>
+        
+                <p>
+                    <label>Milje</label>
+                    <input type="number" placeholder="m" oninput="milesToYards(this.value)" onchange="milesToYards(this.value)">
+                </p>
+        
+                <p>Jardi: <span id="miles-yards"></span></p>
+            </div>
+        </section>
+
+        <section class="big-box container">
+            <div class="box">
+                <p>Unesi duljinu u Inčima</p>
+        
+                <p>
+                    <label>Inči</label>
+                    <input type="number" placeholder="in" oninput="inchesToMeters(this.value)" onchange="inchesToMeters(this.value)">
+                </p>
+        
+                <p>metri: <span id="inches-meters"></span></p>
+            </div>
+        
+            <div class="box">
+                <p>Unesi duljinu u Inčima</p>
+            
+                <p>
+                    <label>Inči</label>
+                    <input type="number" placeholder="in" oninput="inchesToMiles(this.value)" onchange="inchesToMiles(this.value)">
+                </p>
+            
+                <p>Milje: <span id="inches-miles"></span></p>
+            </div>
+        
+            <div class="box">
+                <p>Unesi duljinu u Inčima</p>
+            
+                <p>
+                    <label>Inči</label>
+                    <input type="number" placeholder="in" oninput="icnhesToYards(this.value)" onchange="inchesToYards(this.value)">
+                </p>
+            
+                <p>Jardi: <span id="inches-yards"></span></p>
+            </div>
+        </section>
+
+        <section class="big-box container">
+            <div class="box">
+                <p>Unesi duljinu u Jardima</p>
+            
+                <p>
+                    <label>Jardi</label>
+                    <input type="number" placeholder="yd" oninput="yardsToMeters(this.value)" onchange="yardsToMeters(this.value)">
+                </p>
+            
+                <p>metri: <span id="yards-meters"></span></p>
+            </div>
+            
+            <div class="box">
+                <p>Unesi duljinu u Jardima</p>
+                
+                <p>
+                    <label>Jardi</label>
+                    <input type="number" placeholder="yd" oninput="yardsToMiles(this.value)" onchange="yardsToMiles(this.value)">
+                </p>
+                
+                <p>Milje: <span id="yards-miles"></span></p>
+            </div>
+            
+            <div class="box">
+                <p>Unesi duljinu u Jardima</p>
+                
+                <p>
+                    <label>Jardi</label>
+                    <input type="number" placeholder="yd" oninput="yardsToInches(this.value)" onchange="yardsToInches(this.value)">
+                </p>
+                
+                <p>Inči: <span id="yards-inches"></span></p>
+            </div>
+        </section>
+
+
+        <footer></footer>
+    </body>
+    <script type="text/javascript" src="./script/script.js"></script>
+</html>
